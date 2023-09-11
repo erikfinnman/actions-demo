@@ -55,7 +55,7 @@ jobs:
 
       - name: Deploy to development
         run: |
-          echo "Deploying to server: ${{ vars.TARGET_HOST }}
+          echo "Deploying to server: ${{ vars.TARGET_HOST }}"
 
   prod-deploy:
     runs-on: ubuntu-latest
@@ -71,4 +71,4 @@ jobs:
 
       - name: Deploy to production
         run: |
-          echo "Deploying to server: ${{ vars.TARGET_HOST }}
+          echo "Deploying to server: ${{ vars.TARGET_HOST }}"
