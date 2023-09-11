@@ -60,7 +60,7 @@ jobs:
   test-deploy:
     runs-on: ubuntu-latest
     environment: test
-    needs: build
+    needs: dev-deploy
     permissions:
       id-token: write
       contents: read
