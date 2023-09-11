@@ -33,3 +33,10 @@ jobs:
       - name: Run test
         run: |
           pytest --github-report
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: the-big-program
+          path: |
+            ./code/the_big_program.py
