@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "actions-demo"
+version = "1.0"
+description = "CI/CD demo"
+authors = ["Erik Finnman <erik.finnman@layer10.se>"]
+packages = [{include = "code"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core","twine==4.0.2"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
